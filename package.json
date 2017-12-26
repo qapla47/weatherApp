@@ -5,13 +5,15 @@
   "main": "index.js",
   "repository": "git@github.com:qapla47/weatherApp.git",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
-    "build": "webpack"
+    "build": "webpack",
+    "postinstall": "webpack -p",
+    "start": "node server.js"
   },
   "author": "Teresa Strout",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
@@ -29,12 +31,13 @@
   "dependencies": {
     "axios": "^0.17.1",
     "babel-preset-stage-1": "^6.1.18",
+    "express": "^4.16.2",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-redux": "4.3.0",
     "react-router": "^2.0.1",
-    "react-sparklines": "^1.6.0",
+    "react-sparklines": "1.4.2",
     "redux": "^3.0.4",
     "redux-promise": "^0.5.3"
   }
