@@ -1,9 +1,9 @@
 {
-  "name": "weather-app",
+  "name": "hackathon project",
   "version": "1.0.0",
-  "description": "Simple weather app with 5 day forecast",
+  "description": "log locations of Lambda School Students",
   "main": "index.js",
-  "repository": "git@github.com:qapla47/weatherApp.git",
+  "repository": "git@github.com:LambdaHackathonMappingStudents/Lambda-Student-Population-Map",
   "scripts": {
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
